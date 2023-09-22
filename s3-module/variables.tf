@@ -2,7 +2,7 @@ variable "env" {
   type    = string
   default = "Dev-Test"
 }
-
+#region
 variable "region" {
   type    = string
   default = "eu-north-1"
