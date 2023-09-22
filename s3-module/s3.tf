@@ -1,7 +1,7 @@
 # s3 bucket for terraform backend
 resource "aws_s3_bucket" "backend" {
   count = var.create_vpc ? 1 : 0
-  bucket = "DevOpsbootcamp32-${lower(var.env)}-${random_integer.priority.result}"
+  bucket = "devopsbootcamp32-${lower(var.env)}-${random_integer.priority.result}"
   tags = {
     Name        = "My s3 backend"
     Environment = "Dev-Test"
