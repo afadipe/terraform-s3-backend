@@ -7,7 +7,7 @@ variable "region" {
   type    = string
   default = "eu-north-1"
 }
-
+#versioning
 variable "versioning" {
   type    = string
   default = "Enabled"
